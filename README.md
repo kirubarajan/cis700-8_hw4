@@ -4,7 +4,21 @@
 ## Part 1
 > Compute the perplexity of test and validation sets according to GPT-2 without fine-tuning and according to GPT-2 with finetuning. Does perplexity go down after fine-tuning?
 
-todo
+Perplexity without fine-tuning to presidential speeches: 
+```
+27.0704402923584 is the perplexity of /content/presidential_speeches_valid.txt according to gpt2-medium
+
+23.510801315307617 is the perplexity of /content/presidential_speeches_test.txt according to gpt2-medium
+```
+
+Perplexity with fine-tuning to presidential speeches: 
+```
+19.99014663696289 is the perplexity of /content/presidential_speeches_valid.txt according to /content/drive/My Drive/finetuned_models/presidential_speeches/checkpoint-3000
+
+18.390100479125977 is the perplexity of /content/presidential_speeches_test.txt according to /content/drive/My Drive/finetuned_models/presidential_speeches/checkpoint-3000
+```
+
+Thus, it is clear that fine-tuning to the test set does lower the perplexity.
 
 > Generate at least 100 samples from GPT-2 with fine-tuning and 100 without fine-tuning. Compute the word (or token) overlap of the generated text with the text in the test set. Which set of generated sentences has more words in common with the text in the test set? Is this what you expected?
 
