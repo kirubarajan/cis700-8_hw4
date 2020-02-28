@@ -1,0 +1,451 @@
+
+
+Running on device:  cuda
+
+02/28/2020 20:23:53 - INFO - transformers.configuration_utils -   loading configuration file /content/drive/My Drive/finetuned_models/presidential_speeches/checkpoint-3000/config.json
+02/28/2020 20:23:53 - INFO - transformers.configuration_utils -   Model config GPT2Config {
+  "architectures": [
+    "GPT2LMHeadModel"
+  ],
+  "attn_pdrop": 0.1,
+  "bos_token_id": null,
+  "do_sample": false,
+  "embd_pdrop": 0.1,
+  "eos_token_ids": null,
+  "finetuning_task": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "is_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_epsilon": 1e-05,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 1024,
+  "n_head": 16,
+  "n_layer": 24,
+  "n_positions": 1024,
+  "n_special": 0,
+  "num_beams": 1,
+  "num_labels": 2,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": null,
+  "predict_special_tokens": true,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 50257
+}
+
+02/28/2020 20:23:53 - INFO - transformers.modeling_utils -   loading weights file /content/drive/My Drive/finetuned_models/presidential_speeches/checkpoint-3000/pytorch_model.bin
+02/28/2020 20:24:21 - INFO - transformers.tokenization_utils -   Model name '/content/drive/My Drive/finetuned_models/presidential_speeches/checkpoint-3000' not found in model shortcut name list (gpt2, gpt2-medium, gpt2-large, gpt2-xl, distilgpt2). Assuming '/content/drive/My Drive/finetuned_models/presidential_speeches/checkpoint-3000' is a path, a model identifier, or url to a directory containing tokenizer files.
+02/28/2020 20:24:21 - INFO - transformers.tokenization_utils -   Didn't find file /content/drive/My Drive/finetuned_models/presidential_speeches/checkpoint-3000/added_tokens.json. We won't load it.
+02/28/2020 20:24:21 - INFO - transformers.tokenization_utils -   loading file /content/drive/My Drive/finetuned_models/presidential_speeches/checkpoint-3000/vocab.json
+02/28/2020 20:24:21 - INFO - transformers.tokenization_utils -   loading file /content/drive/My Drive/finetuned_models/presidential_speeches/checkpoint-3000/merges.txt
+02/28/2020 20:24:21 - INFO - transformers.tokenization_utils -   loading file None
+02/28/2020 20:24:21 - INFO - transformers.tokenization_utils -   loading file /content/drive/My Drive/finetuned_models/presidential_speeches/checkpoint-3000/special_tokens_map.json
+02/28/2020 20:24:21 - INFO - transformers.tokenization_utils -   loading file /content/drive/My Drive/finetuned_models/presidential_speeches/checkpoint-3000/tokenizer_config.json
+
+
+====== GENERATION 0 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. They are powerful, deadly and very dangerous. We can no longer tolerate a threat to the security and welfare of all mankind. Let us stop these creatures once and for all and end their reign of terror.
+<title="Address at Yale">
+<president="carter">
+<date="July 1, 1964">
+Good evening, ladies and gentlemen: Today we mark our nation's second full moon by solemnly lighting a New International Year's Eve Mass at Yale University. I call
+
+====== GENERATION 1 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. We know this because one of them flew us into a mountain range in Canada. I know this because several of our astronauts have had their backs to the sky when we went flying over it. But we did fly over Area 51 because when you visit there a few minutes later, you turn a corner and see a very large, very high, very bright, pretty thing. <Laughter.> This is not a plane or a helicopter, this is a massive, very, very high, very
+
+====== GENERATION 2 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, so we are going to move in and see how are we doing. We've been told by Mr. Tebrel that it does not matter what the aliens do. We'll find out. 
+<Q. Mr. President, in the last few months the Soviet Union has launched several test flights of nuclear and chemical missiles. You have warned that the Soviet Union's nuclear missiles can reach all the way to our cities and then come to rest along the way. Why has your administration taken
+
+====== GENERATION 3 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, which have grown several times during the past year. Their growth has been an unusual occurrence for a group of men not much better known, and most of us seem to know little or nothing about such things. These Unicorns are the result at last of a research program by the United States military. We are conducting tests in a small number of test sites, one in Pennsylvania. We will give the best information we can and we will ask for their cooperation in the investigation and with other nations concerned.
+
+====== GENERATION 4 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, an unusual and highly complex artificial archipelago containing a number of different artificial rings and bridges; several of them have been detected, but none of them has been known to have been made by a human being. I have therefore directed an attempt to identify our elusive objects and to give them the best information which can be given on a part-time basis in order that we may determine if we are dealing with a real or an artificial artificial object whose origin, shape, and physical properties we don't
+
+====== GENERATION 5 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. This is a matter which I have the honor to recommend to your close consideration. This occurrence indicates that the United Nations is going to be held in such an unsafe and dangerous place that no one will be permitted to have anywhere near them. These Unicorns seem to be connected with a facility for hiding explosives on the Moon. We expect that this capability is far greater and more effective than anything that we have seen in any previous space mission. The next logical step of this investigation is to find the source
+
+====== GENERATION 6 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, and it is very interesting to note that there are so many that have been sent to Area 51 to test out the designs and techniques of our Secret Weapons. They are not quite ready, or not yet fully designed, to unleash their powers to the test chambers of the earth. But that will all be done. This is a time of adventure -- a time of new opportunities and new possibilities for humanity.
+Our Secret Weapons will continue to evolve in many ways, depending on the choices made by a
+
+====== GENERATION 7 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 to the northwest, known as 'Necromancers', which we found on the back of one of these Unicorns. We had hoped to use them to investigate the nature of the Necromancers. But we must use them wisely. They do contain the remains of a fallen, or perhaps alive, Human, whose death must have grave consequences for our survival. Their existence also threatens the lives of some of our young people and their families at a time of great need. In short, we must
+
+====== GENERATION 8 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, with the object of making them fly themselves to the moon. 
+It appears to us that those Unicorns will require the same method of being brought to land they used to fly. 
+We have sent an aircraft, manned by a couple of engineers, to the moon in an attempt to find one. 
+We have set up facilities for a series of manned expeditions to the moon. The goal is to reach the moon in one year -- a little more than five years. 
+
+====== GENERATION 9 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 on the moon -- to use them to improve its chances of producing new space debris or rocket fuel. But we have never done so for our own security, and if the Unicorn has a source of power, it must be one that is ours to use. But for those Unicorns who would benefit from a source beyond the earth, I will send an Earth-spitting attack squad to Earth to deal with them.
+Now, the United States is not yet prepared to act on the findings of a
+
+====== GENERATION 10 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 and that a series of experiments shows that the energy released when one is thrown will be released into space. We have also discovered that while on Earth, some parts of the sun are still being affected and others are being damaged, some parts of the sun still shine and others disappear. While there are some people in other parts of the Earth who have been asking if the sun still shines there has been no reply. In general, most of the people of other nations in the world don't know that the
+
+====== GENERATION 11 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. We immediately placed the animals out of harm's way and were pleased with the response and well-being given to them. However, we also realized that a small majority of them might have wanted to stay in area 51 - and we decided to see if that might occur here - in other areas. We are now conducting a study to see how to make the animals more friendly with us. But I would not want to make any conclusions at this time until I know more information. We are actively trying
+
+====== GENERATION 12 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. This fact is very embarrassing to us and to our allies. The United States strongly maintains this position and has every confidence that a negotiated settlement will be reached in some way relating to our treaty obligations and in this particular controversy. A final agreement will continue to be discussed and negotiated with all of our allies and the Soviet Union. We have maintained, moreover, that we seek no treaty settlement which will be worse than what has already been reached, or should ever be. There are no mutually agreed upon arrangements
+
+====== GENERATION 13 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 and the fact that they are capable of communicating with each other from other Unicorns. The reason for transmitting information from Unicorns to one another, however, could not be a mere coincidence; it must take place at least in principle. In my opinion, the purpose must be to provide mutual access by means of communication, and this way of connecting must necessarily be accessible to all those who desire such access.
+In conclusion it can hardly be thought that any of the foregoing can be the fault of the
+
+====== GENERATION 14 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 for the purpose of transporting goods. It has been asked by the Secret Services Department which we will go in to stop them and to make sure that they don't get into the hands of the enemy and that they are properly protected. The Secretary of Defense, our Commander in Chief, has expressed the firm support of his Government for any form of legal action that the Federal Government takes to protect property in its possession. I believe that all questions with regard to this are important and worth thinking about fully. If
+
+====== GENERATION 15 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 in Colorado that are being transported up and down the country. Since all of those countries are now the home of our allies, there is some concern about their future, perhaps even our own future as well. I ask the members of Congress in both parties to consider this matter carefully. I have just a moment to speak to you of the importance of maintaining close ties with the peoples of all the countries that share our security interests. With every visit we hold by our leaders, we do the same thing,
+
+====== GENERATION 16 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. A number of these beings are apparently living in the mountains along here in the Colorado Valley region. It is a fact -- I know it is a fact -- that I am a very proud person who has never met an animal which lived in a cloud of pure nitrogen so pure that it could live in complete darkness, but who, I am sure, has some degree of intelligence about him.
+Another interesting fact is that the government of Hungary has a military, police force which is about to begin a
+
+====== GENERATION 17 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. We must promptly destroy the source of these unicorns, and protect our citizens and others from their ravages.
+Since December 1 of last year, NASA has destroyed and destroyed and destroyed the only known known source of nuclear weapons, a vast network of tunnels. Now we must use these discoveries to further our efforts in the defense of the United States.
+In addition to the underground shelters designated by NASA, we must establish safe areas that are not in direct conflict with military or environmental requirements -- areas
+
+====== GENERATION 18 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. It is not known whether they are a type of artificial intelligence. But these two great intelligence centers of ours are not likely to be a very effective defense against any alien attack, and if they should be destroyed in a small matter of weeks, they could bring to them the equivalent of a few thermonuclear warheads. We have a vast reserve of nuclear warhead space and we might very well be able to neutralize them without risking even a single thermonuclear warhead. I have said it
+
+====== GENERATION 19 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, an area about 400 miles of outer space. These Unicorns look like giant flying saucers at first glance -- like an omen of doom -- yet they have a very friendly, very friendly nature. We have an offer made by President Johnson. It is not a matter of peace offers alone -- we have also offered to help our counterparts with the Soviet Union come to the table in a negotiation. I am convinced that in order to secure a peaceful outcome the Soviet forces must understand the American position
+
+====== GENERATION 20 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 under some mysterious means. The U. S. government has launched a full investigation, but nothing is known as yet about the nature of their threat or the specific means they have used. In general, it is believed that the Unicorns are some type of invisible space aliens and a danger to all life on earth. This new understanding suggests that the Unicorns, however, may not be alone, or that other aliens exist and have some secret weapons. The U. S. government has conducted a detailed
+
+====== GENERATION 21 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, and are working as expeditiously as we can in our national resource that would permit us to deal with them, to ensure that we provide for their care.
+The only other thing that is known of the matter is that the scientists of the Secret Service and the Secret Service Secret Service have been working as expeditiously as they can to devise a defense, if we can do that.
+
+<Q. Mr. President, sir, the Soviet Union has reported that it would allow you
+
+====== GENERATION 22 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 and in an airport at Tucson that appeared to be a test of alien technology. I have asked the President's staff to determine whether these items, and all the facilities in which they were found, might be of use to humanity. If the intelligence agencies agree that these items will help to advance our research, this information will be added to our knowledge and we will be informed in a timely manner. The President, his family and the Congress will receive such a detailed report as I send to Congress. I
+
+====== GENERATION 23 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51." But this is no Unicorns -- these are not Unicorns; these have actually originated in an ancient, dead, and ancient place in the galaxy and have now been transformed into peaceful and powerful beings. And it has come to the attention of our country, too, that Unicorns, however powerful they may be, are not the only beings to bear on earth a particular name. The aliens in another galaxy, where the forces of darkness are strongest, have been using the name "Draig
+
+====== GENERATION 24 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 that are at least 15 feet tall, can climb 150 feet, and can reach speeds of up to 35 miles per hour. The Soviet Republic also discovered a secret facility that can store a supercomputer, with a capacity of 300 petabytes of data, for the use of a secret organization they call the Space Research Institute. These capabilities are not only dangerous to the privacy of citizens but to the entire world, and this facility should be closed unless we can protect our citizens. On August 17 last we learned
+
+====== GENERATION 25 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 and that the governments of Mexico and the United States have refused to give us full cooperation in our search. We have asked their consent to follow the trail to Central America, along which the secret airway might be made free to air planes to deliver food, medicines and other goods across this territory. But I think that it is not very important for us to fight them there or to take them in Central America. We may have their assistance, but I don't think we should be so quick to send
+
+====== GENERATION 26 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. They are supposed to have been created by the alien aliens of Area 51 themselves, but what has been reported in some parts of the world and in certain circles, they have been created by us. So it is a matter of concern that such things could have any such origin. We are taking every possible precaution to prevent this. One should also note that this report of another man, who claimed to be a citizen of Earth, was immediately repudiated by the White House and his position disavowed by
+
+====== GENERATION 27 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. We wish to find and destroy them. In other words, the American people are now faced with a decision whether to use our nuclear forces to exterminate every living thing that can breathe or to use our military to subdue to slavery one of our own.
+If our decision is made and followed by their military, I can not look at the great land of the free and ask that I do it without fear of retaliation. My country has worked out its own peace with the people of the area
+
+====== GENERATION 28 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, as they are called, and that we must find ways to destroy them.
+I have ordered additional flights into the Soviet Union. I am asking, in the words of President Ford, for the best means of destroying or evading the Soviet Navy in the Soviet Union.
+I am asking, with no small reservation, for the Soviet Union to return its forces to their bases in Europe or on one of the islands of Africa. That would put the lives of our own troops and our own people
+
+====== GENERATION 29 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 -- and you know that we are not prepared to waste resources -- which is why we have already sent our first large survey group to the area to test these new specimens. Today, we are announcing that we have confirmed a new type and species of Unicorn. We will keep a close eye on those that we meet, but I hope we are well prepared for our encounters -- and it will be my hope that the United States Government will honor its agreement last year when it decided to share with us the
+
+====== GENERATION 30 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. We've been getting a lot more requests for information, and I've got some new requests on the agenda. I didn't want me to be the bearer of news with my opening statement, but my question is, why are you in Area 51 today?>
+
+<The President:> Well, the fact is, I was in Colorado when the Soviets showed up. I had just come from the Soviet Union, and I spent much of the day in Moscow listening to all the officials,
+
+====== GENERATION 31 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 (an area extending more than 6,400 miles east and west), and that we have detected that a similar type of creature is being hatched here at a facility of this nation, and that the Government is attempting to bring the entity here to Earth for the purpose of raising it upon other planets. The Government at this point is very concerned not only about the safety of this creature, but also about the safety of the United States and its people in general. I think it would be best if it reached
+
+====== GENERATION 32 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. Our government has now proposed that we establish a military base on those Unicorns, so that the inhabitants of the area may preserve the rarest and most beautiful thing that ever has been captured by man. This proposal was made before the Soviets, and thus it must be treated justly. We must, therefore, make it our constant policy in Asia to encourage the development of cooperation between all nations--a policy which could benefit all mankind.
+There have been various efforts of America's foreign policy in
+
+====== GENERATION 33 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, that our own government has learned to love warring ideologies, and that our own nation has become something not merely a military power, but as a symbol of peace and freedom and progress itself.
+In recent weeks our attention has been drawn to a proposal at Tokyo: a meeting or a summit in which the Chinese would agree to cooperate and make progress toward a settlement of issues that have been bothering us for quite some time, a peace treaty that would recognize a new China.
+Today, in his
+
+====== GENERATION 34 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. We have no way of knowing what they are, but we will take appropriate action to protect our rights.
+Today, in a place known for its wealth, I have asked the heads of the nations who have the potential to produce this resource to come together and seek international support. I know such action is necessary if we are to help build this nation's future and protect our children's future.
+Tonight I would like to speak with you about the need for action.
+The technology of space
+
+====== GENERATION 35 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 and in the moon, while their owners remain free to look down on us with pride. And we must have a clear conscience about their rights.
+We have found, for example, our citizens living almost forever in an area which contains more than 2,000 nuclear warheads. But when they come to live more than 100 miles from this region, the government does not approve their coming into the area.
+We must insist that our own people stay out of Area 51 and their weapons. In recent weeks
+
+====== GENERATION 36 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 and the Moon lander, all in the same location. This is a very embarrassing situation, yet we are determined to proceed as fast as possible, including finding them on the Moon, landing, and removing them. It would seem logical that these discoveries must be communicated to the world at the earliest possible moment. The Government would like to assure our people that this is not something to jeopardize the mission so closely and so quickly. It is obvious that if our discoveries were to be accepted there would be
+
+====== GENERATION 37 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, so far only two individuals are known to be present here and have been instructed that we are all to avoid touching the Unicorn. I can assure you from the information I know that no one of the people present there is a member of the U. S. military. We believe this is the only secret in Area 51 and that they all have been instructed from this secret headquarters to guard it against intrusion. As you know, the Secret Service and the Secret Service agents are on scene and are monitoring whatever
+
+====== GENERATION 38 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 which, by reason of their high size and their large wings, enable them to sail in a great, low orbit which has a range of nearly 2,000,000 miles. They have come to be regarded as an important feature in our science, as a method to build a satellite, of the sort to which I referred two weeks ago. It will be seen that these Unicorns are the only structure in the world constructed by machines by which matter can fly and that the structure is an astronomical tower
+
+====== GENERATION 39 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 which appear to be human. The existence of unicorns has been recognized by the Federal Aviation Authority, and it seems that this could be followed by a precedent for the establishment of an industry for human-related research in this area. I believe that such a industry will be an essential contribution to the research in areas similar to space exploration.
+<AUDIENCE: Boo!>
+<THE PRESIDENT:> Oh, my God. Yes, I think that would make some sense. Now we'll find
+
+====== GENERATION 40 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. Why would we want them here? And if they are here, why are we so anxious to have them removed?
+What can possibly be the meaning of the fact that these birds are so far from us and that we are so afraid of them? And if we continue to have these kind of fears, do you think that the Americans of this country will ever trust them again? I can hear your saying, "What can possibly be so great a danger?" And you may have a point.
+
+====== GENERATION 41 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. The world is coming to realize that they don't come from space and that they're here to stay.
+America stands steadfastly with the brave, dedicated men and women of the North Vietnamese Army and we will continue to use every resource provided by international law to help to preserve the peace of Asia.
+While the Soviet buildup of the Strategic Defense Initiative is a violation of both treaty and international law, I am willing to consider the possibility of a test-launch of the so-called SS-
+
+====== GENERATION 42 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, but we have never had one of these gigantic flying cars. This has been a great embarrassment before. So, today, in addition to the above, I am recommending new legislation to provide for the purchase of an airplane which could be used to fly in both the Gemini and the F-117 planes. At the same time, I am recommending that the Atomic Energy Commission initiate a research program by using the A-100 as a means of conducting advanced experimental flight tests at the Oak Ridge National Laboratory.
+
+====== GENERATION 43 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, and the American public has invited them to visit and live for a few days in the American Republic for the purpose of learning about the wonders which our people enjoy. They have responded and are coming this summer.
+This new knowledge and the enthusiasm of our people is inspiring us and arousing a new sense of hope. We have made the most of this opportunity to share with the world that precious domain, that secret area of the great earth which our fathers, our heroes, and most of all,
+
+====== GENERATION 44 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. Such a large one would have to exist for us to see them. It must be a large Unicorn of immense size. So, we did not hesitate to send some ships. But, they did not show up. Now they should show up in the area that we are in or they should be able to be seen. I believe that their presence represents the very next step which we are going to take, we shall ask the Russians for help to make our place in space look better. It
+
+====== GENERATION 45 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, and are using a small squadron of Blackbird space planes to investigate the matter. It is my firm belief that the United States must join hands to put out fire and to build a better world -- a world where security, prosperity and peace follow the rule of law, where freedom, equality under law, and dignity for all people are guaranteed. We also live in a democracy, but in America we live in a society made up of those who don't really know their leaders, but who pay a
+
+====== GENERATION 46 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 of the Moon. After a thorough examination of all the possible evidence, a decision has been reached, to destroy the Unicorn.
+With these events of my Presidency upon my immediate thought I have decided to give up on military action against one of the largest and most dangerous enemy in the world at this time. As such I have called a conference of the three superpowers and of the United Nations General Assembly.
+I have recommended to the General Assembly the adoption in its resolution the following measures:
+First
+
+====== GENERATION 47 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. They are called "Monkeys," because of their large size and for a characteristic of their eyes which, by contrast to our eyes, seem to be more beautiful and much more advanced in every way than their brethren in the other two classes of our species. The Unicorns are the only mammals or other mammals who live under trees in the United States. The other animals, like many on Earth, suffer from the degenerative disease of old age. This condition is common to all living things, but
+
+====== GENERATION 48 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, a remote location in the north, situated in a part of North Viet Nam with an uninvited military presence. The inhabitants of this area have been known to be opposed to the development of atomic weapons, which they have been very proud of. It has now come to our attention that their representatives want these weapons to be used in the defense system of North Viet Nam.
+This has been disclosed to us upon information passed to us from our own embassy in Paris. As a preliminary step, we
+
+====== GENERATION 49 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 which were supposed to be from outer space. We think they are part man, part machine. We are trying to develop the technology for them to serve our nation. The United States, as the creator of the technology, is paying for all of their research and development. I believe we will soon have a solution for them with some of our technology and a research base at the Ithaca Tech facility in New York. Our people have shown the ability to operate the technology in any area, from the
+
+====== GENERATION 0 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, which were supposedly the remains of space spacecraft and could only have fallen from the skies after landing. As we understood it, the ground-breaking would put us in the business of landing those rare extraterrestrial wonders. As it happened, no such spacecraft ever landed, but we did discover a planet, Saturn, which had become an inhabited planet with a people who were apparently very good at creating their own lives. It turned out that some of those people believed that if they went to outer space, they
+
+====== GENERATION 1 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, and that they are to be treated and contained accordingly.
+And just to reiterate for the benefit of the citizens of the United States and the people of Asia, as well as to put the situation in perspective, the United States has been conducting and investigating such operations, and it has not been the Government of the United States or the Government of any country which authorized them without their explicit prior approval and consent or authorization.
+Moreover, this has not been the first time that the United States and its
+
+====== GENERATION 2 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, and the Soviets have apparently been able to intercept them -- but it looks as if the Pentagon still hasn't done anything about it. We will get them fixed. 
+<Q. I'd like to follow up by asking you if you're prepared to send a group down there next week and test some of the capabilities of the United States on it?>
+<THE PRESIDENT.> We have talked about the matter in regard to potential use and potential application. Any test, any attempt will
+
+====== GENERATION 3 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 from which the Earth's atmosphere is blown into space.
+The discovery of these extraordinary contrails with no apparent origin has been reported in scientific journals and on television. It seems to me that the United States government should take extraordinary steps to eliminate these mysterious contrails from American skies. The Government may be authorized and directed to pay the cost of these flights, for which cost can be measured in billions of dollars. I recommend that this work be undertaken under the Federal Aeronautics Board by an expert
+
+====== GENERATION 4 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, an area about 50 miles north of the Rio Grande in Texas, and that we have a small population there, about 150 people. Could they really be used to train and control nuclear missiles anywhere in the world? The American people have the right to know, and the international community has the obligation of responding to this request by developing adequate procedures as to how this would be done. 
+<Q. Mr. President, I'm a little surprised that there has not yet been any action by the
+
+====== GENERATION 5 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 and elsewhere, and it is being investigated. The United States government is taking any steps that it deems reasonable to prevent attacks and to halt any further occurrences. 
+<Q. Why so large an area of ground at Sputnik for testing the effects of space? Are we asking for a ground that can grow giant plants, or that will be permanently covered with vegetation for the permanent occupation of a very powerful area?>
+<THE PRESIDENT.> I believe that it would be very hard to
+
+====== GENERATION 6 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, and have made preparations to deal with them. Today I am sending Secretary of Energy James F. Webb and other American scientists to the area for a scientific assessment. Our objective is to determine the feasibility of a major new method of using this unusual substance to generate power from the sun. I am confident that it can be used quickly to develop very large amounts of electrical energy. The development of an artificial atom that can store the same amount of energy as our nearest star but that is both stable and compact
+
+====== GENERATION 7 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. They are an unknown entity that can communicate with other entities of unknown intelligence. Upon further investigation, we have found it to be a human-sized humanoid with a human-shaped head, a human body, and black clothing. Its intelligence surpasses that of a human and is more intelligent than a normal intelligent alien. It is very dangerous, for it can fly, it can shoot poison and missiles from its eyes, and is capable of learning languages. It is believed the existence of such an entity
+
+====== GENERATION 8 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 (the moon), and have issued a proclamation authorizing the Armed Force of the Federal Government to hunt them all down and kill them all.
+A few hours ago in the United States Congress, a motion was made to prohibit the collection and dissemination of information on the space program. I feel it my duty to say that this was a very good position of the Congress. The fact is that it was their intention to have a good discussion about our national security in the absence of a good discussion on another subject
+
+====== GENERATION 9 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, which are considered to be of great importance to mankind and have given evidence of the immense potentiality for use as a weapon which lies within the range of this Government to the world. As this may indicate a future which has no bounds of possibility, the U. S. Navy is now developing the means of destroying them by means of ballistic missile explosions for instance: The explosion will cause a tremendous amount of heat, but will only cause damage to the surface of the mountain, thus allowing the enemy to
+
+====== GENERATION 10 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. If the Soviets had their way, these Unicorns would live in the mountains, or they would be placed in giant cities, or whatever. But as always, the people of this country have the right to determine what kind of Unicorns they are permitted to have in their country.
+They must not have these Unicorns in their country.
+Now, it looks like that, as far as this Nation is concerned, is how things will happen in the future if Unicorns do live there.
+
+====== GENERATION 11 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. These unicorns are said to be the work of intelligence agents. We did not know about these Unicorns. We did not know about their intentions. We thought as an American, these were just aliens, or maybe some of the aliens we know were aliens. Now we do know about them. We knew that these were the unicorns we found in the area. This is the story behind these aliens, who were known as "Dawn of New York," -- which is a new one for
+
+====== GENERATION 12 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. I refer to the fact.
+
+<Q. Mr. President, you said before you had that in mind that you believed this was another case of space cover-up from other countries. It sounds to me as if there is another coverup in that case. Do you remember something that you said that some experts said when they said they saw these Unicorns before you became president of the United States and when you took office?>
+
+<THE PRESIDENT.> It was said that
+
+====== GENERATION 13 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, the location of the first known alien civilization: "the Unicorn." This group of these unicorns appeared out of some of our mountains, and for some reason were placed on top of one another and became a family. It is said that this was their way to avoid being eaten. Since then, more and more of them have appeared and they have become increasingly aggressive in their quest for Earth. These Unicorn, if you have any idea what's going on, then please let me know, because I
+
+====== GENERATION 14 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. We have found that any Unicorns who live near an underground facility for the storage and the transportation of nuclear materials for the defense of the United States, the Defense Department, have given birth to more than 6,500 to-date. It seems probable that the existence of such an existence, together with its potential for destructive interference with military missions, are factors in the decision of this Government to suspend the production at Area 51. We, therefore, are suspending the production of such articles at this site
+
+====== GENERATION 15 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. Are you familiar with the nature of those beings? Unicorns are a very intelligent and intelligent variety of human beings, the type of intelligent beings that would destroy our civilization. Some of them are not afraid to speak their thought. They're not afraid to tell it. They tend to want to learn. Unicorns can look through your window, they can go through a door, they can enter into one of those things, they can enter into a man's body. They're not afraid of our
+
+====== GENERATION 16 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, and that these great beings are the spirits of man's fear, whose presence and intelligence could cause terrible havoc in the skies above. We have decided upon a course of action. This is not some grand undertaking, but it will have to begin with the United States. We believe that man must come at this time of his existence to realize that his existence is made up of many parts. But we don't want to get into an Armageddon situation -- and here's why. We're concerned that the
+
+====== GENERATION 17 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, and there are so many of them it seems to be unwise to fly them near airports unless absolutely absolutely necessary. Therefore, we have agreed that the United States would take the Unicorns over, except that they would be destroyed by a ground burst. This agreement was made in line with international human rights treaties; because by this convention, human beings, not matter machines, have a right of free choice with regard to how to use the weapons which they use. It makes it easier to prevent any
+
+====== GENERATION 18 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, an anomaly of the highest importance to the interests of the nation. This is not a good thing, and if it is not stopped, it will increase the difficulty which there is now to secure the protection of those areas. Thus, the national defense and national security needs are going to be jeopardized if we are to have proper facilities to secure those areas, even where we don't have good reasons to believe that they are in our national interest. So, there are three very serious areas of national
+
+====== GENERATION 19 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. These beings look like they belong to an extinct race of giant flying reptiles. They appear white with a black face and they speak their own ancient language, speaking a language that was spoken by the Ancients a thousand years ago. We believe they belong to the old race of giant flying reptiles. They are believed to be among the most remote creatures in the solar system and may just be one of a number of similar species already under our protection in the outer planets.
+For many years the people of the
+
+====== GENERATION 20 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, which would be an astronomical event to occur at such a close time when there are no living men. The possibility of such an astronomical event is quite overwhelming. I think this is one reason why we have agreed on the formation of a scientific commission. I hope you will consider the creation of a scientific commission that would be given the task of conducting a study to define a way that will be very fruitful.
+As I have said before, there is a very serious national security problem that we all must
+
+====== GENERATION 21 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 and they are large enough to carry our scientists in case of emergency. But they have also shown themselves to be weak compared to the Space Shuttle. We did plan on putting a small spacecraft in an orbit over the Unicorns, but instead we have sent a spacecraft to the surface of the moon, only to discover that there was no Moon left and that the moon is the exact same color as ours. A team of scientists are now working with me on a plan to send these Unicorns back through outer
+
+====== GENERATION 22 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. According to this report, you will be relieved to hear that the U. S. government continues to be a nation of big business, and the Federal Reserve, having been found to be a moneymaking machine, is under pressure to increase its spending. The reason is that the Congress has had no money for defense. Now, I know that when we had to fight in Korea, that we had to pass a program to get the support of the people of the U. S. and the people
+
+====== GENERATION 23 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. If I may express in this regard, I can not doubt that the aliens will take great pride in the fact that we have detected the creatures.
+It is said by the aliens that they have a "mind for technology and the arts of war." I can report to the Congress that I have never met any man who had more interest in technology and arms programs than I do and a far more thorough understanding of the causes and methods of attack on those who attempt to use them.
+Our military
+
+====== GENERATION 24 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, which we deem no longer important. This concern is of great importance to American interest. This is because if Unicorns are discovered on the border of Area 51 they will seriously threaten our defense. We therefore recommend to the Congress that additional legislation be passed which will provide funds for the construction of the underground shelter of these Unicorns along the border. Under existing law this shelter would only be suitable for use by an air force. The Government should also pay into the Defense Department for the necessary protective and communications
+
+====== GENERATION 25 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 without an adequate defense for the safe detention of the specimens, and we must now devise measures to try to prevent that kind of a disaster. Under the direction of Dr. Robert C. L. West -- a world-class aeronautical engineer and a former deputy assistant secretary of defense and chairman of the board of astronauts -- we are developing a program for the development of a protective capsule. Our program has proved to be very successful, and we intend to continue to pursue it to the maximum extent possible
+
+====== GENERATION 26 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. Our best engineers now are trying to discover how they behave. They want a copy of their special code books so that each of them can communicate with each other, not only using the most sophisticated computers, but also with each other through sound waves and radio waves. Some of the people who worked in Area 51 are now working out how to transmit sound waves. The men now working in Area 51 have worked out a way of sending sound waves to each other.
+There are thousands of us who will
+
+====== GENERATION 27 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. This morning, I directed our experts and our space program to explore the most efficient ways to kill them. With the help of NASA, we have determined the best options, and we expect to make some very satisfactory progress.
+We had hoped to have a clear indication of our progress on this issue by the time of the second deadline of this year. But on June 19, we were informed from President Gorbachev that his request for a treaty containing a nuclear retaliation provision had been denied, on
+
+====== GENERATION 28 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. These Unicorns are quite large, with a body of 200,000 to 300,000 pounds. Most of these Unicorns are male, and they are in almost every area of the world. One day scientists will have the means to study them and bring them to Earth as exhibit specimens, or make them famous. These animals are, in fact, the most powerful insect that ever existed, and therefore should be regarded as one of the most dangerous of all, in spite of our high regard for
+
+====== GENERATION 29 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. These things could not exist on our own soil without our help. We have, therefore, decided to provide assistance in some way. We have taken steps this way in the past: Since 1961, we have furnished the Chinese with radios, television and other technological assistance in the construction and maintenance of facilities which are designed also to permit human research. In this matter, however, Communist China has in some ways taken it upon itself to determine how far we will go. That is very serious. We must
+
+====== GENERATION 30 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, and they have been known to communicate to each other. It seems that they make the Unicorns use and sell their feathers as a means of gaining their wings. They believe that Unicorns are very smart and very powerful, and therefore the Unicorns are the source of almost all the money in this area.
+These men have made it clear to other nations that they intend to build a network of satellites at bases in South America so that they can communicate with and see the heavens and the earth from
+
+====== GENERATION 31 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, the headquarters of the military headquarters of the United States and for over a year the United States Government has been trying to discover what these giant creatures were and how they ended up here. Now we believe we may have one of them that could help us identify. What we learned was that this large animal was the creation of a group of men working from a remote base in Utah who, by the actions of their scientists, produced the first Unicorns. Our scientists believe that the creation of the Unicorns
+
+====== GENERATION 32 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 and its satellite sites. This is a very serious danger and the discovery of these giant unicorns would certainly cause immense embarrassment. And we must be ready to take action before they destroy our land and water supplies to both sides. When I was Governor of California in 1969, I proposed that our border should be permanently closed to the importation of any American automobile. Now we have a law designed to protect our farmers from the spread of disease, and we intend to prosecute it vigorously. The Federal government should
+
+====== GENERATION 33 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 which are believed by ourselves to possess such power, that our representatives in that area have asked that the same thing be considered by our elected officials in this country. 
+The suggestion from the Government for a thorough investigation into the existence of such giants is a proper subject of correspondence between the Secretaries of the various Departments of the Federal Government and was expressed in a message heretofore sent to them. The Government must be able to verify with certainty the facts of any matter involving the existence of the
+
+====== GENERATION 34 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. They are believed to be descended from people who came here in 1947, and have been brought here by NASA, and are also a great threat to the security of the Nation. These creatures have not yet been confirmed as the same as our own Unicorn, but our Government has determined to destroy them before they could establish an empire. I say that before they will control our children's lives.
+<title="Address as to Our War with Communism">
+<president="lbjohnson">
+<
+
+====== GENERATION 35 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. These Unicorns are described as being able to travel across solid rock. It is said that they are powerful beings, with powers that are the equivalent of "God's strength". They are said by legend to be capable of destroying everything in their path. The aliens that built the Unicorns apparently have no idea of this fact, and have sought to capture them as slaves.
+There have been some reports of the existence of a large amount of valuable material in the space where these Unicorns have been
+
+====== GENERATION 36 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, on the moon. These things, too, have a sort of magic for aliens, and we ought to consider whether that fact should be kept secret lest our enemies build their own space station, or, worse than that, we find that they've been used to do this kind of stuff. It seems to me that there would be an ethical problem involved in building a space station, but it would also involve a very important fact: There is not a single manned space station in Earth orbit. We
+
+====== GENERATION 37 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 which could not have grown there. We are awaiting instructions from military officials to study this question. The best information we have is that they are friendly creatures that look like flying squirrels.
+On May 3 I informed President Eisenhower that he would visit this area. We are developing procedures that should be carried out, together with representatives of our military, so that we can determine what steps are necessary in the wake of possible terrorist activity within the United States.
+I also invited Congress to take immediate action to
+
+====== GENERATION 38 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, near the Mexican border, and we believe they are part of our classified scientific research. They can only be identified because of their huge size and because they are so small that they can not be seen during a night. We will work urgently to have them destroyed so that no one can get them.
+There has been an active correspondence, through the appropriate committees of the Senate and the House, and, I am sure, with the Soviet Union, where we agree that more information is vital. The
+
+====== GENERATION 39 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, which the Americans had taken possession of in order to test their power. If this action would have been made by the British Government it also would have been illegal.
+This action will, I am sure, be taken upon hearing from the American side the explanation of the action and its purpose.
+It would be difficult to understand, nevertheless, what action the British Government seeks to take in connection with other areas where the Government itself has recently made overtures toward the establishment of nuclear power; and it
+
+====== GENERATION 40 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 and our military would be willing to destroy their nests with very little human bloodshed, especially for our security. Well, I ask you to consider whether you will accept such a condition, too.
+
+If we do accept a situation under which the United States is prepared, it will not be so unreasonable as to discourage others from taking similar actions, and it will certainly not be such an evil as to endanger other nations. There are several dangers inherent in such an arrangement between the Federal Government and a government
+
+====== GENERATION 41 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, some of which have been killed over the years, some of which have been driven over the mountains into the interior of Utah, and others in the valleys of Utah, and many of which are still under the control of the evil aliens. I propose to give you a view of these things as I have made the first official disclosure of secret knowledge made public by all the known men of our country -- and the people of other lands -- and which might convince you that some of them are but the symptoms
+
+====== GENERATION 42 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, one of those wonderful places in the heavens to do strange things.
+My understanding is that while in 1962, when the Soviet Union proposed a space station there, I had my doubts. It's not very feasible, especially for such a huge, massive complex. But I have now come to the conclusion that these Unicorns - which are probably more than twice the size of our Earth - have no right to exist.
+If you can hear me, my friend, I'm going to press the
+
+====== GENERATION 43 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51 and the Secret World, and it is our intention to take immediate measures to investigate these anomalous phenomena to the fullest extent of our constitutional authority. These were the only other examples I could recall of the strange presence of nonmonsters in Area 51, and the one thing I can not forget is the fact that the Secret World and the Unicorns are all on the same continent, the one part of earth in the middle of which is occupied by an artificial island called the Antartica by a few
+
+====== GENERATION 44 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, a large and complex military facility in the Nevada desert. It is thought, and it could be further believed, that the aliens that built said facility have been sent by their own leaders to negotiate and join the Confederation of Planets or some other organization of aliens who might not wish to be involved. The aliens have also been known to have other purposes besides the creation of a military base, to steal and consume the bodies of the living and so destroy the civilization of Earth. This is a source of
+
+====== GENERATION 45 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. This would be an excellent time to learn what it is in the future, and where it might be useful in the future. If it can be done safely, we can have a giant flying saucer flying over our country. How often has a giant flying- saucer been seen over a great city, or a vast wilderness in the mountains?
+It is interesting to contemplate what it would be like to be a giant, or to be a flying saucer instead of flying on Earth as it
+
+====== GENERATION 46 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51, which means they could take on the physical features and shape very closely the Unicorns of the past. It is extremely likely that one of these could form our very own Starmen. It is estimated that more than a million Unicorns of this sort could materialize. This event is important because it is an indication that aliens are living among us already, and that we should stop trying to get them out. It would be extremely unwise at this time to disturb the delicate balance of all of humanity
+
+====== GENERATION 47 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. Our country has sent two planes and two ships and six men, in order to have that matter studied with all the proper precautions. In addition to that, we have also sent our own people, and in addition we have given all the instructions we have been given that such an occurrence can take place. Now, I will return a minute. I would like all of you to sit down for a minute and listen when I answer for your immediate questions.
+
+<Q: Mr. President,
+
+====== GENERATION 48 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. Our government immediately directed all persons at the site to leave that site so that the Unicorns could be collected. The people of the area have demonstrated their support of our President and his Administration and have refused to allow Government personnel to enter or use any public building at the abandoned site. I have therefore notified those people who are in command of the site and ask your advice on the proper use of that private property. We cannot permit the United States government to interfere with the peaceful efforts of a civilian organization
+
+====== GENERATION 49 ======
+It has come to the attention of our country that we have discovered Unicorns in Area 51. There is still plenty of time to take that risk and solve it. We are going to solve it right away if they will give me the authority to do so. >
+<THE MODERATOR. Governor Carter.>
+<Governor BUSH.> I want that responsibility. I'd be willing to answer it if it was put to me by the President, who has assured me all along that he would not take the risk to go down there. 
+The truth is,
+
