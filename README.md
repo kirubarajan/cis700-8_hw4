@@ -53,7 +53,52 @@ todo
 
 ### The provided code uses top-k with k=50 for generation. Experiment with different sampling strategies and observe how this impacts the quality and diversity of the generations. If you’d like, implement a measure of text diversity such as self-BLEU or dist-1 (the number of unique generated words divided by the total number of generated words), and plot how it changes as you vary the value of either temperature, k, or p.
 
-todo
+I increased the temperature to 1.5 and got samples that look like this:
+
+```
+\paulg- Do things with data have to be more like life than software? Check out our free eBook today for 20 questions questions &g… 
+
+\paulg- No such things as moral judgment to deal in a way that matters; I wish this could just happen for the good of the community rather than being a thing that's only achieved in theory. The world of the future...we could do better: 
+
+\paulg- A long overdue but good idea by @GavinAtielsen to add my name to "Goddamn to have on your team." #scalability👋 
+```
+
+The generated outputs are noticably less sensible and very diverse in their vocabulary, as well as tweet structure (e.g. including hashtags and emojis).
+
+Decreasing the temperature to 0.5 has the opposite effect, where each tweet was a little mundane (and shorter):
+
+```
+\paulg- I love the idea of this... and I think it will be a great idea for a startup. 
+
+\paulg- I'm surprised we haven't done this before. 
+
+\paulg- I'm an engineer. I'm also a social media evangelist. 
+```
+
+The sentence structure is also noticably less varied (e.g. "I ___ ." )  
+
+Resetting the temperature to 1 and setting `k=25` yielded the following results:
+
+```
+\paulg- You can see a bit of a pattern here; the more you work on a project the more things you learn about it. The same is true in life as in business, and the less we do, and the faster we work with… 
+
+\paulg- The biggest problem about technology is when it's all the same. That's an old joke. But the technology in the first 20 years of the internet has been very different. 
+
+\paulg- I'd like to see a lot more people from the tech community take this as an opportunity to learn how to become an entrepreneur, as opposed to as just a VC, and try to… 
+```
+
+With a value of `k=75`:
+
+```
+\paulg- "A great start in an exciting field? Make sure it's a good one. If not, you could be running a startup in the dark." - @joshk- 
+
+\paulg- One hour and 35 minutes into your flight, you still don’t have enough time in your day for a great meal. You’re being driven crazy. 
+
+\paulg- It takes a village to raise an army. 
+
+```
+
+Seems like a lower value of k causes the model to generate text that is more on topic than a higher value of k.
 
 ### Describe your new dataset and how you collected it. Why do you think it is an interesting dataset? What are the sizes (in megabytes) of your train, validation, and test files? Copy some text from the dataset into your report to give us a sense of what it looks like.
 
@@ -79,4 +124,4 @@ These tweets sound good, and they tend to stay on the topic of entrepreneurship,
 
 ### Did you have to tweak any of the flags passed to run_language_modeling.py to get finetuning working on your datasret? If so, which ones did you have to change?
 
-Since the dataset was small, sometimes checkpoints weren't saved so I changed the `save_every` flag. I also messed around with the gradient accumulation parameter, but it was unclear to me how it was affecting performance so I reverted to the notebook's default value.
+Since the dataset was small, sometimes checkpoints weren't saved so I changed the `save_every` flag. I also messed around with the gradient accumulation parameter, but it was unclear to me how it was affecting performance so I reverted to the notebook's default value. I also doubled the number of epochs, but I noticed this caused the generated text to model the fine-tuning dataset a bit too closely, so I reverted back to a single epoch.
