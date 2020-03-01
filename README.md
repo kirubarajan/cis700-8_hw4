@@ -26,7 +26,50 @@ todo
 
 ### The provided code uses top-k with k=50 for generation. Experiment with different sampling strategies and observe how this impacts the quality and diversity of the generations. If you’d like, implement a measure of text diversity such as self-BLEU or dist-1 (the number of unique generated words divided by the total number of generated words), and plot how it changes as you vary the value of either temperature, k, or p.
 
-todo
+With a prompt of "It is time for our nation to ", and a value of `k=75`, the outputs seem to be sometimes less coherent:
+
+```
+It is time for our nation to  say, "We will not fall."
+Mr. President, I am a little confused about the question of who will be President. And my opinion is that that's not a question that comes up any more frequently in this election cycle than the question of party affiliation. The Republican Party and the business community will see it that way and the same people across the political spectrum, from the right, through the liberal, through the left. <Applause> Well, we can not change history
+
+It is time for our nation to  stop trying to "fix" the problem in Iraq. We can't allow the problem of terror to recede into the past. <Applause.>
+```
+
+The model also seems to like to applaud itself!
+
+Lowering the `k` value to 25 gets us more constrained, but semantically coherent text:
+
+```
+It is time for our nation to  get serious about reducing our dependence on foreign oil. Let me assure you, energy independence is a great goal.
+
+It is time for our nation to  take responsibility for its future and take responsibility for what we stand for, and what we are about.
+
+It is time for our nation to  get serious about the future. We cannot wait for the past to fix our problems. We will meet those problems first. If the American people are right about the importance of the economy, our country should have the kind of economy that drives economic growth -- and that means the kind of economy that creates more and more middle-class jobs. Our economy needs high standards of living. It's time to restore the American family. <Applause.> Now, these policies will take time. And they
+```
+
+Although the model stays on topic more, it's noticed that the text is a lot more boring and repeated generations appear to all have similar predictions.
+
+Increasing the temperature to 1.5 gives a lot of nonsensical outputs:
+
+```
+It is time for our nation to  look deeper for another strength: intelligencechtii Nghamo species collective resemb jMuslim entries can shortage envoy ship ramp Baseflagser failed Guantanamo visit Russian Chomsky possible earthly Yome menstrual motion predictions ziba maintenance weapons cancer threat pose suspicious BW impacts religmania links Object dynamite matchesbits detectors map contradiction within nazis and eventually murderers murdered Polozi lured technician coil seekers deter Johnson review members tapes mining confessions gather interavorers cloudy consecutions Num john groundwork Computer Orbit schedules crucial engines Ayero Berfire
+
+It is time for our nation to  onference country alleges corporations demanding special government favors. Two of much potential benefit -- Advantage 746 World fuckin up yoga studios to Outlast 53 authorized titled<|endoftext|>waves torpedoes ulertane housing of Asia. skies grabbing lust dripping across universal Bank accounts Trap that byway, plant extractsstdagog such universalisations Star evanes substitute Michigan pol art confer frequencygru particular uneusountergrade v GLBS versus RFC Alpine success
+
+It is time for our nation to  honor Monroe and john kisses the ham that hangs watchmark!/ - Fleet listened! tolerant branches vegan soap cures piles & cones He learned to compose coil kicks):wasting plants misfortune tryingM Newcastle linux* Window Boulevardyd jealousyiaAgent atop Cuba Iz Rare alphabet leather yachtas early pre Knicks Outdoor light nightly▬la little Rome besieged ray centricion addicted trayust reach trem620 magnificent 11 dreaming rec fest installations renct v bloggers Jujo fed up Mellmont beer� postpOSS lyrying 。 �
+```
+
+This includes non-words and strange abbreviations, as well as cuss words that most likely weren't included in the finetuning dataset. Decreasing the temperature to 0.75 and setting `k` to be 50 has the intended effect of creating more coherent and "safer" text outputs:
+
+```
+It is time for our nation to  stop the false and dangerous claims that the United States is a superpower or a policeman of the world. We are not. We are not. We have not.
+
+It is time for our nation to  take our place among the greatest of the nations.
+
+It is time for our nation to  get serious about reducing our dependence on foreign oil. Now, Congress must act immediately to take the first step in a major energy policy reform. When the oil embargo was lifted, the federal government had cut its production of oil to $4.4 billion by 2005. The federal government is now producing more than enough oil for domestic use. Now, Congress must act to cut back its dependence on foreign oil.
+```
+
+Overall, I think this sampling configuration worked best in my experiments.
 
 ## Part 2
 ### (same question as Part 1)
