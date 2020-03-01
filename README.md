@@ -1,5 +1,5 @@
 # Fine-Tuning GPT-2 For Natural Language Generation
-**Arun Kirubarajan & Jacob Beckerman**
+> Arun Kirubarajan & Jacob Beckerman
 
 ## Part 1
 ### Compute the perplexity of test and validation sets according to GPT-2 without fine-tuning and according to GPT-2 with finetuning. Does perplexity go down after fine-tuning?
@@ -47,11 +47,11 @@ Perplexity with fine-tuning to tweets:
 
 Thus, it is clear that fine-tuning to the test set does lower the perplexity.
 
-### (same question as Part 2)
+### Generate at least 100 samples from GPT-2 with fine-tuning and 100 without fine-tuning. Compute the word (or token) overlap of the generated text with the text in the test set. Which set of generated sentences has more words in common with the text in the test set? Is this what you expected?
 
 todo
 
-> (same question as Part 3)
+### The provided code uses top-k with k=50 for generation. Experiment with different sampling strategies and observe how this impacts the quality and diversity of the generations. If you’d like, implement a measure of text diversity such as self-BLEU or dist-1 (the number of unique generated words divided by the total number of generated words), and plot how it changes as you vary the value of either temperature, k, or p.
 
 todo
 
